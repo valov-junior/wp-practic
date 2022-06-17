@@ -31,19 +31,29 @@
     text-align: center;
 }
     </style>
-    <div class="container">
+    <div class="container"><img src="./img/Logologo.png" alt=""></a>
         
         
             <h3 class="success-text"><?=$_COOKIE['allseccess']?></h3>
         
-        
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="" alt=""><img src="./img/Logologo.png" alt=""></a>
+      
+        <nav class="navbar navbar-expand-lg navbar-light"></nav>
+       
+            <!-- <a class="navbar-brand" href="#"><img src="./img/Logologo.png" alt=""></a> --> <?php the_custom_logo(); ?>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto nav_menu">
+
+            <?php wp_nav_menu( array(
+          'theme_location' => 'top',
+          'container' => null,
+          'container_class' => null,
+          'menu_class' => 'navbar-nav m-auto nav_menu',
+
+        )); ?>
+              <!-- <ul class="navbar-nav m-auto nav_menu">
+        
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                     apparel
@@ -68,7 +78,7 @@
                 <li class="nav-item"><a href="" class="nav-link">tech</a></li>
                 <li class="nav-item"><a href="" class="nav-link">drinkware</a></li>
                 <li class="nav-item"><a href="" class="nav-link">gifts</a></li>
-              </ul>
+              </ul> -->
               <div class="nav_right">
                 <a href=""><i class="fa fa-trash icon_cart"  aria-hidden="true"></i></a>
                 <a href="/registration.php"> <button>create an account</button></a>
