@@ -1,5 +1,7 @@
 <?php
 
+
+require_once('wp-bootstrap-navwalker-master/class-wp-bootstrap-navwalker.php');
 add_action('wp_enqueue_scripts' , 'style_theme');
 add_action('after_setup_theme' , 'my_menu');
 

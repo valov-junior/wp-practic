@@ -37,7 +37,7 @@
             <h3 class="success-text"><?=$_COOKIE['allseccess']?></h3>
         
       
-        <nav class="navbar navbar-expand-lg navbar-light"></nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
        
             <!-- <a class="navbar-brand" href="#"><img src="./img/Logologo.png" alt=""></a> --> <?php the_custom_logo(); ?>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,9 @@
           'theme_location' => 'top',
           'container' => null,
           'container_class' => null,
-          'menu_class' => 'navbar-nav m-auto nav_menu',
+          'menu_class' => 'navbar-nav m-auto nav_menu myMenu',
+          
+          'walker' => new WP_Bootstrap_Navwalker()
 
         )); ?>
               <!-- <ul class="navbar-nav m-auto nav_menu">
