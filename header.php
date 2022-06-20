@@ -49,7 +49,7 @@
           'theme_location' => 'top',
           'container' => null,
           'container_class' => null,
-          'menu_class' => 'navbar-nav m-auto nav_menu myMenu',
+          'menu_class' => 'navbar-nav m-auto nav_menu',
           
           'walker' => new WP_Bootstrap_Navwalker()
 
