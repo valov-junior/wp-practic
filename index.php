@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
     
     <div class="container slider">
         <div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
@@ -269,3 +270,6 @@
     </div>
 
    <?php get_footer(); ?>
+
+
+   
