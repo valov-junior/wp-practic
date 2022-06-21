@@ -1,74 +1,58 @@
 <footer>
+    
+                        
         <div class="container footer">
-            <!-- <a href="#"><img src="./img/Logologo.png" alt=""></a> <hr color="#181818"> --><?php the_custom_logo(); ?> <hr color="#181818">
+            <a href="#"><img src="./img/Logologo.png" alt=""></a> <hr color="#181818">
             <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <h4>adress</h4>
-                    
-
-       
-                    <div class="footer-left">
-                        <p>м.київ, 01042 вул.маккайна джона, буд.39 офіс13, <a href="mailto:HELLO@AMEDIA.UA" >hello@amedia.ua</a> </p>
-                            
-                        </li>
+                   <?php the_title(); ?>
+                   <?php the_content(); ?>
+                   <?php wp_nav_menu( array(
+                        'theme_location' => 'footer1',
+                        'container' => null,
+                        'container_class' => null,
+                        )); ?>
                         <a href="#"><i class="fa fa-linkedin-square fa-lg" style="color:#181818;" aria-hidden="true"></i></a>
                         <a href="#" target="_blank"><i class="fa fa-instagram fa-lg" style="color: #181818;" aria-hidden="true"></i></a>
-                    </div>
+                        
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <h4><?php the_title(); ?></h4>
+                    <h4>catalog</h4>
                     <div class="row">
                         <div class="col-md-6">
                         <?php wp_nav_menu( array(
-                        'theme_location' => 'footer-middle',
+                        'theme_location' => 'footer2',
                         'container' => null,
                         'container_class' => null,
-                        
-                        
-
-        )); ?>
-                            <!-- <ul>
-                                <li><a href="#">apparel</a></li>
-                                <li><a href="#">office & home</a></li>
-                                <li><a href="#">bags</a></li>
-                            </ul> -->
+                        )); ?>
                         </div>
                         <div class="col-md-6">
                         <?php wp_nav_menu( array(
-                        'theme_location' => 'footer-middle-right',
+                        'theme_location' => 'footer3',
                         'container' => null,
                         'container_class' => null,
-                        
-        )); ?>
-                    
-                            <!-- <ul>
-                                <li><a href="#">tech</a></li>
-                                <li class="only_drinkware"><a href="#">drinkware</a></li>
-                            </ul> -->
+                        )); ?>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <h4><?php the_content(); ?></h4>
+                    <h4>contact us</h4>
                     <div class="row">
                         <div class="col-md-6">
                         <?php wp_nav_menu( array(
-                        'theme_location' => 'footer-right',
+                        'theme_location' => 'footer4',
                         'container' => null,
                         'container_class' => null,
-                        
-                    )); ?>
-                            <!-- <ul>
-                                <li><a href="#">доставка</a></li>
-                                <li><a href="#">размерная сетка</a></li>
-                                <li><a href="#">связатся с нами</a></li>
-                            </ul> -->
+                        )); ?>
                         
                         </div>
                         <div class="col-md-6">
-                            <ul>
-                                <li><a href="#">faq</a></li>
-                            </ul>
+                        <?php wp_nav_menu( array(
+                        'theme_location' => 'footer5',
+                        'container' => null,
+                        'container_class' => null,
+                        )); ?>
                         </div>
                     </div>
                 </div>

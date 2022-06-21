@@ -10,9 +10,11 @@ add_action('my_short' , 'short_action');
 
 function my_menu(){
     register_nav_menu( 'top', 'Меню в шапке' );
-    register_nav_menu( 'footer-middle', 'Меню в подвале по центру' );
-    register_nav_menu( 'footer-middle-right', 'Меню в подвале по центру правее' );
-    register_nav_menu( 'footer-right', 'Меню в подвале cправа' );
+    register_nav_menu( 'footer1', 'Меню в подвале первый столбец' );
+    register_nav_menu( 'footer2', 'Меню в подвале второй столбец' );
+    register_nav_menu( 'footer3', 'Меню в подвале третий столбец' );
+    register_nav_menu( 'footer4', 'Меню в подвале четверый столбец' );
+    register_nav_menu( 'footer5', 'Меню в подвале пятый столбец' );
 }
 
 function style_theme(){
