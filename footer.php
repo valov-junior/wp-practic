@@ -15,7 +15,7 @@
                         )); ?>
                         <a href="#"><i class="fa fa-linkedin-square fa-lg" style="color:#181818;" aria-hidden="true"></i></a>
                         <a href="#" target="_blank"><i class="fa fa-instagram fa-lg" style="color: #181818;" aria-hidden="true"></i></a>
-                        
+                       
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <h4>catalog</h4>
@@ -65,6 +65,7 @@
         </div>
         
     </footer>
+   
 
           
     

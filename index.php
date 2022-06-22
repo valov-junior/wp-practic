@@ -10,10 +10,10 @@
             </ol>
             <div class="carousel-inner slider_carousel">
               <div class="carousel-item active" data-interval="1000000">
-                <img src="./img/man 3.jpg" class="d-block w-100" alt="...">
+                <img src="<?php the_field('image_slider'); ?>" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-sm-block slider_nav">
-                  <h3>#wild gradient <br> younder</h3>
-                  <p>explore the new amedia agance collection</p>
+                  <h3><?php the_field('title_slider'); ?></h3>
+                  <p><?php the_field('content_slider'); ?></p>
                   <a href="" ><button>see new collection</button></a>
                 </div>
               </div>
@@ -218,15 +218,15 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about_us_left">
                 <ul>
-                    <li>Amedia is creative desing agency based in Kiev, <br> Ukraine.</li>
-                    <li>Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Обеспечивает до жизни рукопись! Рот запятой своего все дал дорогу текста до даже.</li>
-                    <li class="about_us_th">Looking for Amedia product? Go to: <a href="#">Amedia.ua</a></li>
+                    <li><?php the_field('title-post');?> </li>
+                    <li><?php the_field('content_post');?> </li>
+                    <li class="about_us_th"><?php the_field('content_link');?>  <a href="<?php the_field('link-post');?>"><?php the_field('name_link');?></a></li>
                     <li><button class="about_us_btn">visit on website</button></li>
                 </ul>
                 
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about_us_right">
-                <img src="./img/amedia.png" alt="">
+            <img src="<?php the_field('image_img'); ?>" alt="">
             </div>
         </div>
     </div>

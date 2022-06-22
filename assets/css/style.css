@@ -531,6 +531,7 @@ p.third span{
 .about_us_left li:first-child{
     font-weight: 600;
     margin-bottom: 20px;
+    width: 80%;
 }
 .about_us_left li:last-child{
     margin-top: 20px;
