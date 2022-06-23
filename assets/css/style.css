@@ -3,7 +3,12 @@
     padding: 0;
     margin: 0;
 }
-
+.container{
+    max-width: 1630px;
+}
+html{
+    margin: 0px!important;
+}
 
 .success-text{
     background: lightgreen;
@@ -22,7 +27,7 @@
 }
 .nav_menu li{
     display: inline-block;
-    padding: 1px 5px;
+    padding: 1px 30px;
 }
 
 
@@ -33,6 +38,8 @@
     font-size: 15px;
     color: #181818;
     /* padding-left: 0px; */
+    font-weight: 700;
+    
 }
 
 .nav_menu_second li:first-child{
@@ -45,7 +52,7 @@
 
 
 .nav_right button{
-    padding: 9px 25px;
+    padding: 9px 30px;
     background-color: #181818;
     text-transform: uppercase;
     color: white;
@@ -65,30 +72,32 @@
 }
 
 .icon_cart{
-    padding-right: 10px;
+    padding-right: 60px;
 }
 .show{
     border: none;
 }
 .pointer_prev{
-    background-image: url(./img/VectorLeft.png);
+    background-image: url(../img/VectorLeft.png);
+    height: 48px;
+    width: 24.34px;
 
 }
 .pointer_next{
-    background-image: url(./img/VectorRight.png);
+    background-image: url(../img/VectorRight.png);
+    height: 48px;
+    width: 24.34px;
+}
 
-}
-#menu-item-27 a:first-child{
+
+#menu-item-31 .show{
     border-top: 1px solid #181818;
+    border-radius: 0px;
 }
-#menu-item-27 span{
-    padding-right: 24px;
-}
-#menu-item-34 a:first-child{
+
+#menu-item-138 .show{
     border-top: 1px solid #181818;
-}
-#menu-item-34 span{
-    padding-right: 24px;
+    border-radius: 0px;
 }
 
 .slider{
@@ -101,18 +110,27 @@
 
 .slider_nav{
     position: absolute;
-    bottom: 50px;
+    bottom: 178px;
+    left: 277px;
+}
+.slider-indicators{
+    width: 9px!important;
+    height: 9px!important;
+    margin: 1em auto;
+    background: silver;
+    border-radius: 50%;
 }
 .slider_nav h3{
     font-family: SF Pro Text;
     font-size: 48px;
     font-style: normal;
     font-weight: 800;
-    line-height: 48px;
+    line-height: 57px;
     letter-spacing: 0.02em;
     text-align: left;
     color: #181818;
     text-transform: uppercase; 
+    width: 60%
 }
 .slider_nav p{
     font-family: SF Pro Text;
@@ -160,8 +178,8 @@
     text-transform: uppercase;
 }
 .nav_assortment .active_nav{
-    width: 160px;
-    height: 36px;
+    width: 192px;
+    height: 48px;
     background: #181818;
     border-radius: 3px;
     color: white;
@@ -170,8 +188,8 @@
 }
 
 .nav_assortment li a{
-    width: 160px;
-    height: 36px;
+    width: 192px;
+    height: 48px;
     background: #F1F1F1;
     display: inline-block;
     margin-right: 10px;
@@ -187,7 +205,7 @@
     color: white;
 }
 .nav_assortment li{
-    margin-right: 15px;
+    margin-right: 48px;
 }
 
 

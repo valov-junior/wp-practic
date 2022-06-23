@@ -4,16 +4,16 @@
     <div class="container slider">
         <div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#slider" data-slide-to="0" class="active"></li>
-              <li data-target="#slider" data-slide-to="1"></li>
+              <li class="slider-indicators" data-target="#slider" data-slide-to="0" class="active"></li>
+              <li class="slider-indicators" data-target="#slider" data-slide-to="1"></li>
               
             </ol>
             <div class="carousel-inner slider_carousel">
               <div class="carousel-item active" data-interval="1000000">
-                <img src="<?php the_field('image_slider'); ?>" class="d-block w-100" alt="...">
+                <img src="<?php the_field('image_slider' , 'option'); ?>" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-sm-block slider_nav">
-                  <h3><?php the_field('title_slider'); ?></h3>
-                  <p><?php the_field('content_slider'); ?></p>
+                  <h3><?php the_field('title_slider' , 'option' ); ?></h3>
+                  <p><?php the_field('content_slider' , 'option' ); ?></p>
                   <a href="" ><button>see new collection</button></a>
                 </div>
               </div>
@@ -214,19 +214,20 @@
     </div>
 
     <div class="container about_us">
+        
         <h2>about us</h2> <hr>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about_us_left">
                 <ul>
-                    <li><?php the_field('title-post');?> </li>
-                    <li><?php the_field('content_post');?> </li>
-                    <li class="about_us_th"><?php the_field('content_link');?>  <a href="<?php the_field('link-post');?>"><?php the_field('name_link');?></a></li>
+                    <li><?php the_field('title-post', 'option');?> </li>
+                    <li><?php the_field('content_post', 'option');?> </li>
+                    <li class="about_us_th"><?php the_field('content_link' , 'option');?>  <a href="<?php the_field('link-post');?>"><?php the_field('name_link');?></a></li>
                     <li><button class="about_us_btn">visit on website</button></li>
                 </ul>
                 
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about_us_right">
-            <img src="<?php the_field('image_img'); ?>" alt="">
+            <img src="<?php the_field('image_img', 'option'); ?>" alt="">
             </div>
         </div>
     </div>
