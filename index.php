@@ -45,7 +45,36 @@
             <li class="nav-item"><a class="nav-link active_red" href="#">sales</a></li>
     </ul>
                 <div class="row row_assortment">
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+
+                    <?php 
+                    // параметры по умолчанию
+                            $my_posts = get_posts( array(
+                                'numberposts' => 4,
+                                'category' => 'FEATURED ITEMS',
+                                'order' => 'ASC',
+                                'post_type'   => 'post',
+                                'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+                            ) );
+
+                            foreach( $my_posts as $post ){
+                                setup_postdata( $post );
+
+                            ?>
+                             <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+                                <a href="<?php the_permalink() ?>" class="widht_row"><?php the_post_thumbnail() ?></a>
+                                <img class="new" src="./img/new.png" alt="">
+                                <p class="first"><?php the_title() ?></p>
+                                <p class="second"><?php the_content() ?></p>
+                                <p class="third">$90.00</p>
+                                <a href=""><span>add to card</span></a>
+                             </div>
+                            <?php 
+                            }
+
+                            wp_reset_postdata(); // сброс
+                    
+                    ?>
+                    <!-- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                         <a href="#" class="widht_row"><img  src="./img/1.png" alt=""></a>
                         <img class="new" src="./img/new.png" alt="">
                         <p class="first">womens puff jacket</p>
@@ -76,7 +105,7 @@
                         <p class="second">Outerwear</p>
                         <p class="third">$90.00</p>
                         <a href=""><span>add to card</span></a>
-                    </div>
+                    </div> -->
                 </div>
 
             <div class="see_all">
@@ -87,18 +116,44 @@
     <div class="container categories"> 
         <h2> categories</h2> <hr>
         <div class="row">
+
+        <?php 
+        // параметры по умолчанию
+            $my_posts = get_posts( array(
+                'numberposts' => 3,
+                'category'    => 'CATEGORIES',
+                'order'       => 'DESC',
+                'post_type'   => 'post',
+                'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+            ) );
+
+            foreach( $my_posts as $post ){
+                setup_postdata( $post );
+                ?>
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <?php the_post_thumbnail() ?>
+                <p><a href="<?php the_permalink() ?>"><?php the_title() ?> </a></p>
+            </div>
+                
+                <?php
+                
+            }
+
+            wp_reset_postdata(); // сброс
+        ?>
+            <!-- <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                 <img class="categories_img" src="./img/categories1.png" width="100%" alt="">
                 <p>for man/unisex </p>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                <img class="categories_img"  src="./img/categories2.png" width="100%" alt="">
+           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"> -->
+                <!-- <img class="categories_img"  src="./img/categories2.png" width="100%" alt="">
                 <p>gifts</p>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                 <img class="categories_img"  src="./img/categories3.png" width="100%" alt="">
                 <p>office & home</p>
-            </div>
+            </div> -->
+            
         </div> 
         <div class="see_all_categories">
             <a href=""><button>see all</button></a>
@@ -110,15 +165,17 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 left">
                     <form>
-                        <div class="form-group form_group">
-                          <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e-mail">
+                        <!-- <div class="form-group form_group">
+                          <input name="email1" type="email" class="form-control my-form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e-mail">
+                        </div> -->
+                        <?php echo do_shortcode('[contact-form-7 id="238" title="Контактная форма 1"]') ?>
+                        <div class="form-group form-check check_input checkbox">
+                          <input name="checkbox1" type="checkbox" class="form-check-input checkbox_input" id="exampleCheck1">
+                          <label  class="form-check-label check_label checkbox_label" for="exampleCheck1">I accept the <a href="#">Terms of mailing</a></label>
                         </div>
-                        
-                        <div class="form-group form-check check_input">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label check_label" for="exampleCheck1">I accept the <a href="#">Terms of mailing</a></label>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn_primary">Submit</button>
+
+                       <?php echo do_shortcode('[contact-form-7 id="239" title="Button Automatization"]') ?>
+
                       </form>
                 </div>
                 <div class="col right">

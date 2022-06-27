@@ -213,8 +213,9 @@ html{
     width: 100%;
 }
 .row_assortment{
-    margin-top: 20px;
+    margin-top: 30px;
     position: relative;
+    text-align: center;
 }
 img.new{
     position: absolute;
@@ -234,7 +235,7 @@ p.first{
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #181818;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 p.second{
     font-family: 'SF Pro Text';
@@ -244,6 +245,7 @@ p.second{
     line-height: 16px;
     letter-spacing: 0.02em;
     color: #909090;
+    margin-top: 10px;
 }
 
 p.third{
@@ -255,7 +257,7 @@ p.third{
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #181818;
-    margin-bottom: 10px;
+    margin: 15px 0 35px;
 }
 .row_assortment a span{
     font-family: 'SF Pro Text';
@@ -314,10 +316,10 @@ p.third span{
 .categories{
     margin-top: 50px;
 }
-.categories p{
+.categories p a{
     position: absolute;
-    bottom: 10px;
-    left: 100px;
+    bottom: 65px;
+    left: 160px;
     font-family: 'SF Pro Text';
     font-style: normal;
     font-weight: 800;
@@ -361,12 +363,30 @@ p.third span{
 }
 
 .authorization{
-    background:url(./img/bg-categories.png)no-repeat;
+    background:url(../img/bg-categories.png)no-repeat;
     background-size: cover ;
     background-position: center center;
     padding: 60px 50px;
 }
-.btn_primary{
+.wpcf7-submit{
+    background: #181818;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    width: 240px;
+    height: 48px;
+    text-transform: uppercase;
+}
+.wpcf7-submit:hover{
+    background: transparent;
+    color: #181818;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+    border: 1px solid #181818;
+}
+/* .btn_primary{
     background: #181818;
     border-radius: 3px;
     color: white;
@@ -383,7 +403,7 @@ p.third span{
     cursor: pointer;
     transition: all .3s ease 0s;
     border: 1px solid #181818;
-}
+} */
 
 .authorization h3{
     font-family: 'SF Pro Text';
@@ -417,6 +437,17 @@ p.third span{
     font-variant: small-caps;
     color: #181818;       
     text-align: center;
+    width: 70%;
+    padding-left: 50px;
+}
+.checkbox_input{
+    appearance: none;
+    -webkit-appearance: none;
+    
+}
+
+.checkbox_input:checked + .checkbox_label:after{
+    opacity: 1;
 }
 .check_label{
     font-family: 'SF Pro Text';
@@ -426,12 +457,38 @@ p.third span{
     line-height: 21px;
     letter-spacing: 0.02em;
     color: #181818;
+    padding-left: 15px;
 }
 .check_label a{
     color: #181818;
 }
 .check_input input{
     background: transparent;
+}
+.check_label:before{
+    content: "";
+    display: block;
+    width:  25.29px;
+    height: 25.29px;
+    border: 2px solid #181818;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.check_label:after{
+    content: "";
+    display: block;
+    width: 13.29px;
+    height: 13.29px;
+    background: url(../img/checkbox.png)no-repeat;
+    background-size: 12px 12px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    z-index: 2;
+    opacity: 0;
 }
 
 

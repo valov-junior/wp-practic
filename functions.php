@@ -16,6 +16,7 @@ function my_menu(){
     register_nav_menu( 'footer4', 'Меню в подвале четверый столбец' );
     register_nav_menu( 'footer5', 'Меню в подвале пятый столбец' );
     add_theme_support( 'post-thumbnails', array( 'post' , 'page') );
+    add_theme_support('title-tag');
 }
 
 function style_theme(){
