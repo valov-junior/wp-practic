@@ -294,34 +294,13 @@
         <h2>contact us</h2> <hr>
         <h6 text-success><?= $_SESSION['good']?></h6>
         <div class="contactUsForm">
-            <form action="contact_check.php" method="post">
-                <div class="form-group">
-                  
-                  <input type="text" name="username" class="form-control"   placeholder="Name" value="<?php $_SESSION['username']?>" >
-                  <p class="text-danger"><?= $_SESSION['errorName']?></p>
-                  
+            <form action="contacts_check.php" method="post">
+            <?php echo do_shortcode('[contact-form-7 id="240" title="Без названия"]') ?>
+                <div class="contact-input" >
+                  <input name="checkbox2" type="checkbox" class="contact_us_input" id="exampleCheck2">
+                  <label class="checkLabel" for="exampleCheck2">I consent to the processing of personal data in accordance with the Privacy Policy on the site.</label>
                 </div>
-                <div class="form-group">
-                    
-                    <input type="tel" name="phone" value="<?= $_SESSION['phone']?>" class="form-control"  placeholder="Phone">
-                    <p class="text-danger"><?= $_SESSION['errorPhone']?></p>
-                  </div>
-                <div class="form-group">
-            
-                    <input type="email" name="useremail" value="<?= $_SESSION['useremail']?>" class="form-control"  placeholder="Email">
-                    <p class="text-danger"><?= $_SESSION['errorEmail']?></p>
-                    
-                  </div>
-                <div class="form-group">
-            
-                  <input type="text" name="massage" value="<?= $_SESSION['massage']?>" class="form-control"  placeholder="Your massage">
-                  <p class="text-danger"><?= $_SESSION['errorMassage']?></p>
-                </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label checkLabel" for="exampleCheck1">I consent to the processing of personal data in accordance with the Privacy Policy on the site.</label>
-                </div>
-                <button type="submit" class="btn btn-primary contactUsBtn">subscribe</button>
+               <?php echo do_shortcode('[contact-form-7 id="241" title="Без названия"]') ?>
               </form>
         </div>
        

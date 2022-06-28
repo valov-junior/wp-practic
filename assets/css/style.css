@@ -515,15 +515,16 @@ p.third span{
 	font-size: 32px;
 	margin: 0 3px;
 	line-height: 1;
-	color: lightgrey;
-	text-shadow: 1px 1px #bbb;
+	color: #F1F1F1;
+	
 }
 .rating-result > span:before {
 	content: '★';
+   
 }
 .rating-result > span.active {
-	color: gold;
-	text-shadow: 1px 1px #c60;
+	color: #FFD500;
+	
 }
 
 
@@ -570,9 +571,11 @@ p.third span{
     margin-top: 15px;
 }
 .next_icon{
-    background: url(./img/VectorRight.png)no-repeat;
+    background: url(../img/VectorRight.png)no-repeat;
     background-size: cover;
     background-position: center center;
+    width: 24px;
+    height: 48px;
 }
 
 
@@ -648,11 +651,47 @@ p.third span{
 .contactUsForm{
     width: 50%;
 }
+.contact-input{
+    position: relative;
+    
+    padding-left: 1.25rem;
+}
 .contactUsForm input{
     border: none;
     border-bottom: 1px solid #181818;
     border-radius: 0px;
     padding: 0px;
+}
+.contact_us_input{
+    appearance: none;
+}
+.contact_us_input:checked + .checkLabel::after{
+    opacity: 1;
+}
+.checkLabel::before{
+    content: "";
+    display: block;
+    width:  25.29px;
+    height: 25.29px;
+    border: 2px solid #181818;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.checkLabel::after{
+    content: "";
+    display: block;
+    width: 13.29px;
+    height: 13.29px;
+    background: url(../img/checkbox2.png)no-repeat;
+    background-size: 12px 12px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    z-index: 2;
+    opacity: 0;
 }
 .contactUsBtn{
     padding: 9px 25px;
@@ -681,6 +720,7 @@ p.third span{
     line-height: 21px;
     letter-spacing: 0.02em;
     color: #181818;
+    padding-left: 15px;
 }
 footer{
     margin-top: 50px;
