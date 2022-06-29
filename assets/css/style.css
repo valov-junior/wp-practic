@@ -1,8 +1,48 @@
+@font-face {
+	font-family: 'SF Pro Text';
+	src: url('../SF-Pro-Display-Heavy.eot');
+	src: local('☺'), url('../SF-Pro-Display-Heavy.woff') format('woff'), url('../SF-Pro-Display-Heavy.ttf') format('truetype'), url('../SF-Pro-Display-Heavy.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SF Pro Text';
+	src: url('../SF-Pro-Display-Medium.eot');
+	src: local('☺'), url('../SF-Pro-Display-Medium.woff') format('woff'), url('../SF-Pro-Display-Medium.ttf') format('truetype'), url('../SF-Pro-Display-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SF Pro Text';
+	src: url('../SF-Pro-Display-Regular.eot');
+	src: local('☺'), url('../SF-Pro-Display-Regular.woff') format('woff'), url('../SF-Pro-Display-Regular.ttf') format('truetype'), url('../SF-Pro-Display-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SF Pro Text';
+	src: url('../SF-Pro-Text-Bold.eot');
+	src: local('☺'), url('../SF-Pro-Text-Bold.woff') format('woff'), url('../SF-Pro-Text-Bold.ttf') format('truetype'), url('../SF-Pro-Text-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+
+
+
+
+
+
+ 
+ 
+ 
  *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
 .container{
     max-width: 1630px;
 }
@@ -60,6 +100,8 @@ html{
     border: none;
     cursor: pointer;
     transition: all .3s ease 0s;
+    font-family: 'SF Pro Text';
+    font-weight: 700;
 }
 .nav_right button:hover{
     background-color: white;
@@ -153,6 +195,8 @@ html{
     height: 48px;
     border: none;
     float: left;
+    font-family: 'SF Pro Text';
+    font-weight: 700;
 }
 .slider_nav button:hover{
     background: transparent;
@@ -185,6 +229,8 @@ html{
     color: white;
     text-transform: uppercase;
     border: none;
+    font-family: "SF Pro Text";
+    font-weight: 800;
 }
 
 .nav_assortment li a{
@@ -196,6 +242,8 @@ html{
     text-transform: uppercase;
     color: #181818;
     text-align: center;
+    font-family: 'SF Pro Text';
+    font-weight: 800;
 }
 .nav_assortment li a:active{
     background: red;
@@ -289,7 +337,7 @@ p.third span{
     background: #F1F1F1;
     color: #181818;
     width: 100%;
-    height: 40px;
+    height: 55px;
     text-transform: uppercase;
     margin-top: 20px;
     font-family: 'SF Pro Text';
@@ -333,7 +381,7 @@ p.third span{
     background: #F1F1F1;
     color: #181818;
     width: 100%;
-    height: 40px;
+    height: 55px;
     text-transform: uppercase;
     margin-top: 20px;
     font-family: 'SF Pro Text';
@@ -346,7 +394,7 @@ p.third span{
     font-variant: small-caps;
     border-radius: 3px;
     border: none;
-    margin: 40px 0 20px;
+    margin: 40px 0 60px;
 }
 .see_all_categories button:hover{
     background: #181818;
@@ -376,6 +424,8 @@ p.third span{
     width: 240px;
     height: 48px;
     text-transform: uppercase;
+    font-family: 'SF Pro Text';
+    font-weight: 700;
 }
 .wpcf7-submit:hover{
     background: transparent;
@@ -471,7 +521,7 @@ p.third span{
     width:  25.29px;
     height: 25.29px;
     border: 2px solid #181818;
-    background-color: #fff;
+    background-color: transparent;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -598,6 +648,9 @@ p.third span{
     display: flex;
     align-items: center; 
 }
+.about_us_left ul{
+    width: 80%;
+}
 .about_us_left li{
     font-family: 'SF Pro Text';
     font-style: normal;
@@ -605,6 +658,7 @@ p.third span{
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
+    width: 70%;
 }
 .about_us_left li:first-child{
     font-weight: 600;
@@ -623,6 +677,8 @@ p.third span{
     border: none;
     cursor: pointer;
     transition: all .3s ease 0s;
+    font-family: 'SF Pro Text';
+    font-weight: 700;
 }
 .about_us_btn:hover{
     background-color: white;
@@ -721,6 +777,7 @@ p.third span{
     letter-spacing: 0.02em;
     color: #181818;
     padding-left: 15px;
+    margin-bottom: 40px;
 }
 footer{
     margin-top: 50px;
