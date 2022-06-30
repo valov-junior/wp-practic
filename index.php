@@ -130,7 +130,7 @@
             foreach( $my_posts as $post ){
                 setup_postdata( $post );
                 ?>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 categories-media-size">
                 <?php the_post_thumbnail() ?>
                 <p><a href="<?php the_permalink() ?>"><?php the_title() ?> </a></p>
             </div>
@@ -186,7 +186,7 @@
     </div> 
 
     <div class="container comments">
-        <h2>Reviews of our customers</h2> <hr>
+        <h2>Reviews of our customers</h2> <hr margin-bottom: 30px;>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-interval="10000">

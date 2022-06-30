@@ -32,7 +32,7 @@
     text-align: center;
 }
     </style>
-    <div class="container"><img src="./img/Logologo.png" alt=""></a>
+    <div class="container">
         
         
             <h3 class="success-text"><?=$_COOKIE['allseccess']?></h3>

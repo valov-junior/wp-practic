@@ -2,7 +2,7 @@
     
                         
         <div class="container footer">
-            <a href="#"><img src="./img/Logologo.png" alt=""></a> <hr color="#181818">
+            <!-- <a href="#"><img src="./img/Logologo.png" alt=""></a> <hr color="#181818"> --><?php the_custom_logo(); ?><hr color="#181818">
             <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <h4>adress</h4>

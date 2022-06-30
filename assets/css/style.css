@@ -360,6 +360,11 @@ p.third span{
 
 .categories_img{
     position: relative;
+
+}
+.categories-media-size img{
+    width: 100%;
+    height: 100%;
 }
 .categories{
     margin-top: 50px;
@@ -847,10 +852,32 @@ span.footer_second{
 @media  screen  and (max-width: 414px){
     .slider_nav{
         top: 19px;
+        opacity: 0;
+    }
+    .nav_right button{
+        opacity: 0;
+    }
+    .about_us_left li{
+        width: 100%;
+    }
+    .checkLabel::before{
+        top: 25px;
+    }
+    .categories p a{
+        left: 90px;
+    }
+    .pointer_prev{
+        height: 20px;
+        width: 12.34px;
+    }
+    .pointer_next{
+        height: 20px;
+        width: 12.34px;
     }
     .slider_nav h3{
         font-size: 12px;
         line-height: 14px;
+        right: 200px;
     }
     .slider_nav p{
         display: none;
@@ -880,7 +907,7 @@ span.footer_second{
         padding: 0px;
     }
     .nav-link{
-        padding: 2px;
+        padding: 10px;
     }
     .categories_img{
         margin-bottom: 20px;
@@ -889,7 +916,8 @@ span.footer_second{
         display: none;
     }
     .see_all_categories button{
-        margin-top: 0px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     .contactUsForm{
         width: 100%;
@@ -897,12 +925,39 @@ span.footer_second{
     .next_icon{
         position: absolute;
         bottom: 70px;
-        right: 10px;
+        
+        right: 20px;
+        width: 20px;
+        height: 24px;
     }
 }
 @media (min-width:415px) and (max-width: 767px) {
     .nav_assortment{
         justify-content: center;
+    }
+    .slider_nav{
+        top: 19px;
+        opacity: 0;
+    }
+    .nav_right button{
+        opacity: 0;
+    }
+    .about_us_left li{
+        width: 100%;
+    }
+    .checkLabel::before{
+        top: 25px;
+    }
+    .categories p a{
+        left: 90px;
+    }
+    .pointer_prev{
+        height: 20px;
+        width: 12.34px;
+    }
+    .pointer_next{
+        height: 20px;
+        width: 12.34px;
     }
     .nav_assortment li{
         margin-bottom: 5px;
